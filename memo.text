@@ -1,0 +1,92 @@
+meta description　とは
+ページコンテンツを100文字程度の文章で表した「概要」や「要約」のようなもので、HTML内に記述。
+必ずHTMLのhead内に記述する必要がある。記述方法は、、
+<meta name="description" content="ここにメタディスクリプションのテキストを記述">
+
+OGPタグ　(meta property属性)
+OGPとはOpen Graph Protocolの略で、facebookやtwitterなどのSNSでシェアされた際に、ページのイメージ画像やタイトル、
+ディスクリプション(概要文)、URLなどを正しく表示させる仕組みこと。
+推奨されている記述例
+<head><!-- prefixは必要か不要かわからん -->
+<title>普通のタイトル</title>
+<meta name="description" content="">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="fb:app_id" content="">
+<meta name="twitter:card" content="">
+<meta name="twitter:site" content="">
+<meta name="twitter:creator" content="">
+
+<header>タグの意味と使い方
+header要素は文書やセクションのヘッダーを表します。文書やセクションの冒頭となる見出しや概要、ナビケーションなどのリンクなどを記述する
+場合によく利用される。トップページのヘッダーとする場合は、webサイトのロゴや検索フォーム、メインのナビゲーションメニューなどを含みます。
+index.htmlの使用例はヘッダーにメインナビゲーションを内包している。
+つまり、文書全体のヘッダーにheader要素を使用する場合、以下の例のようなメインのナビゲーションメニューやwebサイトのロゴ、検索フォームなどを
+内包する方法が考えられる。
+
+<ul>タグとは
+「UL」とは、「unordered list(順序のないリスト)」の略で、その名前の通り順序がない箇条書きのリストを表示する際に使用する。
+順序がある番号付きのリストの場合は、<ol>を使用する。
+リストの各項目は<li>で記述し、type属性により、黒丸・白丸・黒い四角を指定することが可能。
+また、<li>にtype属性をつけることで項目ごとに黒丸・白丸・黒い四角のマークを分けることができる。
+●サンプルデモ
+　・type="disc" :黒丸アイコン
+<ul type="disc">
+    <li><サンプルテキスト/li>
+    <li>サンプルテキスト</li>
+</ul>
+　・type="circle" :白丸アイコン
+<ul type="circle">
+    <li>サンプルテキスト</li>
+    <li>サンプルテキスト</li>
+</ul>
+　・type="square" :黒い四角アイコン
+<ul type="square">
+    <li>サンプルテキスト</li>
+    <li>サンプルテキスト</li>
+</ul>
+
+<li>タグとは
+「LI」とは、「List item」の略で、リストの項目を表示するために使用するタグ。
+<ul>~</ul>または<ol>~</ol>の間で使用する。
+<ul>タグはリスト項目に順序をつけたくない場合に併用する。
+リストは箇条書きで表記され、項目の間に順番や序列は発生しない。逆に順番を明らかにしたい場合は<ol>を使用すると項目が順番付きのリストになる。
+<ol>要素のときにはアラビア数字、アルファベット大文字、アルファベット小文字、ローマ数字大文字、ローマ数字小文字のいずれかを指定可能。
+●サンプルデモ
+　・type="1" :アラビア数字
+<ol>
+    <li type="1">サンプルテキスト</li>
+    <li type="1">サンプルテキスト</li>
+</ol>
+　・type="A" :ローマ字(大文字)
+<ol>
+    <li type="A">サンプルテキスト</li>
+    <li type="A">サンプルテキスト</li>
+</ol>
+　・type="a" :ローマ字(小文字)
+<ol>
+    <li type="a">サンプルテキスト</li>
+    <li type="a">サンプルテキスト</li>
+</ol>
+　・type="I" :ローマ数字
+<ol>
+    <li type="I">サンプルテキスト</li>
+    <li type="I">サンプルテキスト</li>
+</ol>
+　・value="数値" :任意の数字から開始
+<ol>
+    <li>サンプルテキスト</li>
+    <li value="5">サンプルテキスト</li>
+    <li>サンプルテキスト</li>
+</ol>
+
+<nav>タグ　：ナビゲーションセクション要素
+<nav>要素は、現在の文書内の他の部分や他の文書へのナビゲーションリンクを提供するためのセクションを表す。
+ナビゲーションセクションの一般的な例としてメニュー、目次、索引などがある。
+
+<iframe> :インラインフレーム要素
+インラインフレーム要素は、入れ子になった閲覧コンテキストを表現し、現在のHTMLページに他のページを埋め込むことができる。
+
